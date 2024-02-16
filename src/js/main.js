@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			document.querySelector('.partic-slider-controls').addEventListener('mouseover', stopAutoSlideShow);
 			document.querySelector('.partic-slider-controls').addEventListener('mouseout', () => {
 					clearInterval(intervalId);
-					intervalId = setInterval(nextSlide, 3000);
+					intervalId = setInterval(nextSlide, 4000);
 			});
 	}
 
