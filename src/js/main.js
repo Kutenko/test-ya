@@ -35,6 +35,35 @@ function moveLine(runningLine) {
 	move();
 };
 
+  // Функция для плавного скролла к элементу
+  function scrollToElement(element) {
+    window.scrollTo({
+      behavior: 'smooth',
+      top: element.offsetTop
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Получаем ссылки на кнопки
+    const supportButton = document.querySelector('.hero-buttons__button--default');
+    const detailsButton = document.querySelector('.hero-buttons__button--primary');
+
+    // Получаем ссылки на элементы, к которым нужно скроллиться
+    const supportSection = document.getElementById('invite');
+    const detailsSection = document.getElementById('location');
+
+    // Добавляем обработчики событий для кнопок
+    supportButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Отменяем стандартное поведение ссылки
+      scrollToElement(supportSection); // Вызываем функцию скролла к элементу
+    });
+
+    detailsButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Отменяем стандартное поведение ссылки
+      scrollToElement(detailsSection); // Вызываем функцию скролла к элементу
+    });
+  });
+
 // Слайдеры
 document.addEventListener("DOMContentLoaded", function() {
 	let e = document.querySelector(".partic__slides"),

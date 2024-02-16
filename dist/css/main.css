@@ -595,11 +595,13 @@ div[class*=__main-title] p span {
   color: #A6A099;
 }
 
-div[class|=hero-buttons__button] {
+a[class|=hero-buttons__button] {
+  display: block;
   max-width: 263px;
+  text-decoration: none;
 }
 
-div[class*=__button] {
+a[class*=__button] {
   border-radius: 66px;
   padding: 15px 49px;
   font-size: 16px;
@@ -607,19 +609,19 @@ div[class*=__button] {
   cursor: pointer;
   transition: all ease-in-out 0.35s;
 }
-div[class*=__button][class*="--default"] {
+a[class*=__button][class*="--default"] {
   background: #1f1f1f;
   color: #ffffff;
 }
-div[class*=__button][class*="--default"]:hover {
+a[class*=__button][class*="--default"]:hover {
   background: #fbce51;
   color: #1f1f1f;
 }
-div[class*=__button][class*="--primary"] {
+a[class*=__button][class*="--primary"] {
   border: 2px solid #1f1f1f;
   color: #1f1f1f;
 }
-div[class*=__button][class*="--primary"]:hover {
+a[class*=__button][class*="--primary"]:hover {
   background: #1f1f1f;
   color: #fff;
 }
