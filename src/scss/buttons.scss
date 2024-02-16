@@ -42,6 +42,7 @@ a[class*='__button'] {
 		border: none;
 		outline: none;
 		transition: all ease-in-out .35s ;
+		cursor: pointer;
 		&:hover{
 			background: #fbce51;
 		}
@@ -82,6 +83,7 @@ a[class*='__button'] {
 		border-radius: 100%;
 		border: none;
 		outline: none;
+		cursor: pointer;
 		&:hover{
 			background: #fbce51;
 	}

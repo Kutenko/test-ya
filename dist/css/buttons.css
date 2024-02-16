@@ -39,6 +39,7 @@ a[class*=__button][class*="--primary"]:hover {
   border: none;
   outline: none;
   transition: all ease-in-out 0.35s;
+  cursor: pointer;
 }
 .partic-slider-controls .partic-prev:hover,
 .partic-slider-controls .partic-next:hover {
@@ -78,6 +79,7 @@ a[class*=__button][class*="--primary"]:hover {
   border-radius: 100%;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .stages-elements-controls .stages-prev:hover,
 .stages-elements-controls .stages-next:hover {
