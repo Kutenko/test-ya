@@ -1,0 +1,93 @@
+div[class|=hero-buttons__button] {
+  max-width: 263px;
+}
+
+div[class*=__button] {
+  border-radius: 66px;
+  padding: 15px 49px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.35s;
+}
+div[class*=__button][class*="--default"] {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+div[class*=__button][class*="--default"]:hover {
+  background: #fbce51;
+  color: #1f1f1f;
+}
+div[class*=__button][class*="--primary"] {
+  border: 2px solid #1f1f1f;
+  color: #1f1f1f;
+}
+div[class*=__button][class*="--primary"]:hover {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.partic-slider-controls {
+  display: flex;
+}
+.partic-slider-controls .partic-prev,
+.partic-slider-controls .partic-next {
+  background: #313131;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  transition: all ease-in-out 0.35s;
+}
+.partic-slider-controls .partic-prev:hover,
+.partic-slider-controls .partic-next:hover {
+  background: #fbce51;
+}
+.partic-slider-controls .partic-prev {
+  padding: 12px 19px 12px 16px;
+}
+.partic-slider-controls .partic-next {
+  padding: 12px 16px 12px 19px;
+}
+
+.partic__details {
+  border: 1px solid #3057a2;
+  border-radius: 62px;
+  padding: 12px;
+  font: 500 16px/120% var(--font-family);
+  color: #3057a2;
+  cursor: pointer;
+  transition: all ease-in-out 0.35s;
+}
+.partic__details:hover {
+  background: #3057a2;
+  color: #fff;
+}
+
+.stages-elements-controls {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.stages-elements-controls .stages-prev,
+.stages-elements-controls .stages-next {
+  background: #313131;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+}
+.stages-elements-controls .stages-prev:hover,
+.stages-elements-controls .stages-next:hover {
+  background: #fbce51;
+}
+.stages-elements-controls .stages-prev.disabled,
+.stages-elements-controls .stages-next.disabled {
+  background: #d6d6d6;
+}
+.stages-elements-controls .stages-prev {
+  padding: 12px 19px 12px 16px;
+}
+.stages-elements-controls .stages-next {
+  padding: 12px 16px 12px 19px;
+}
